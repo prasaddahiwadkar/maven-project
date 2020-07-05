@@ -12,6 +12,12 @@ pipeline
       
     }
     
+         stage('please compile code')
+       { steps {
+           withMaven(jdk: 'locakjdk-1.8', maven: 'localmaven') {
+            sh 'mvn compile'
+}
+    
   }
   
 }
