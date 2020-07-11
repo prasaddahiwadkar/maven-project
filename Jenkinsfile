@@ -12,6 +12,14 @@ stages {
           }
 
       }
+     
+           stage ('complile code')
+      steps {
+            withMaven(jdk: 'localjdk', maven: 'localmaven') {
+            sh 'mvn complile'
+}  
+
+      }
 
   }
 
