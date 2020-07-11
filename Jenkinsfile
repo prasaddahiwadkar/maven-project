@@ -13,10 +13,10 @@ stages {
 
       }
      
-     stage ('complile code')
+     stage ('compile code')
      { steps {
             withMaven(jdk: 'localjdk', maven: 'localmaven') {
-            sh 'mvn complile'
+            sh 'mvn compile'
            }  
      }
       }
