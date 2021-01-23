@@ -5,7 +5,7 @@ pipeline
 
 agent any
 
-Stages{  
+stages{  
 
 stage ('scm checkout')
 
