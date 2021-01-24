@@ -51,7 +51,7 @@ git branch: 'master', url: 'https://github.com/prasaddahiwadkar/maven-project'
 
 }
   
-    stage ('Deploy To Tomcat')
+  {stage ('Deploy To Tomcat')
   { steps { 
     sshagent(['fa94cbcd-db05-4fdf-beb6-c4ffaed2476c']) {
     sh 'scp -o StrictHostKeyChecking=no */target/webapp.war ec2-user@172.31.26.172:/var/lib/tomcat/webapps'
