@@ -40,6 +40,12 @@ git branch: 'master', url: 'https://github.com/prasaddahiwadkar/maven-project'
   }
   
   }
+  
+  stage ('Please Package My Code')
+  steps {
+  withMaven(jdk: 'localjdk', maven: 'localmaven')
+    { sh 'mvn package'}
+ }
 
 }
 
