@@ -62,4 +62,4 @@ git branch: 'master', url: 'https://github.com/prasaddahiwadkar/maven-project'
   }
   
   }
-}
+
